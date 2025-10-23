@@ -276,7 +276,6 @@ namespace EtwPilot.Utilities
                     }
                     if (string.IsNullOrEmpty(PropertyNameInParent))
                     {
-                        Debug.Assert(false);
                         return;
                     }
                     SubscribeToChildErrors(newChild, PropertyNameInParent);

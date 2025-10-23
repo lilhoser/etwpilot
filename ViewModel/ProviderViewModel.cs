@@ -295,7 +295,7 @@ namespace EtwPilot.ViewModel
                 }
                 ProgressState.UpdateProgressMessage(
                     $"Dumping manifest for provider {provider.Name} ({i++} of {providers.Count})...");
-                var target = Path.Combine(root, $"{provider.Id}.xml");
+                var target = Path.Combine(root, $"{provider.Name} {provider.Id}.xml");
                 var manifest = await GetProviderManifest(provider.Id);
                 if (manifest == null)
                 {
